@@ -1,0 +1,652 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="CSS/aos.css">
+        <script src="JS/jquery.min.js">
+        </script>
+        <link rel="stylesheet" href="CSS/r2.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .banner-section-profile{
+        padding: 30px 0px 20px;
+    }
+
+    .banner-body-profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 900px;
+        margin: 0px auto;
+    }
+
+    .bg-red {
+        padding: 80px 0px 80px;
+        background-color: red;
+        width: 100%;
+    }
+
+    .white-bg {
+        max-width: 1220px;
+        margin: 0px auto;
+        background-color: #ffffff;
+        padding: 60px 0px 60px;
+        border-radius: 20px;
+    }
+
+    .bg-white-body {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px 0px;
+    }
+
+    .bg-bottom-sec {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .banner-para-profile {
+        font-family: Jost, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 1.7em;
+        color: #777777
+    }
+
+    .banner-botom-section-profile {
+        padding-left: 30px;
+    }
+
+    .banner-botom-section-profile h6 {
+        font-weight: 300;
+        color: #777777;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .banner-botom-section-profile span {
+        font-weight: 800;
+        font-size: 12px;
+        color: #777777;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        padding-top: 10px;
+    }
+
+
+    .bg-bottom-sec h2 {
+        font-family: Jost, sans-serif;
+        font-size: 34px;
+        font-weight: 600;
+        color: red;
+        margin-bottom: 10px;
+        letter-spacing: 0px;
+    }
+
+    .bg-bottom-sec span {
+        font-family: Jost, sans-serif;
+        font-size: 34px;
+        font-weight: 600;
+        color: black;
+        line-height: 42px;
+        letter-spacing: 0px;
+    }
+
+    .bg-bottom-sec p {
+        font-family: Jost, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .bg-white-body h6 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0px 15px;
+        margin: 0px auto;
+    }
+
+    @media (max-width:768px) {
+        .banner-section {
+            padding: 20px 0px 20px;
+        }
+
+        .banner-body-profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .bg-red {
+            padding: 30px 0px 30px;
+        }
+
+        .white-bg {
+            margin: 0px auto;
+            width: 100%;
+            padding: 80px 0px 80px;
+            border-radius: 10px;
+        }
+
+        .bg-white-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0px 20px 0px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .bg-bottom-sec {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 40px;
+        }
+
+
+
+        .banner-botom-section-profile {
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .banner-botom-section-profile h6 {
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .banner-botom-section-profile span {
+            letter-spacing: 2px;
+            display: block;
+            padding-top: 10px;
+        }
+
+
+        .bg-bottom-sec h2 {
+            font-family: Jost, sans-serif;
+            font-size: 34px;
+            font-weight: 600;
+            color: red;
+            margin-bottom: 10px;
+            letter-spacing: 0px;
+        }
+
+        .bg-bottom-sec span {
+            font-family: Jost, sans-serif;
+            font-size: 34px;
+            font-weight: 600;
+            color: black;
+            line-height: 42px;
+            letter-spacing: 0px;
+        }
+
+        .bg-bottom-sec p {
+            font-family: Jost, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+
+        .bg-white-body h6 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .bg-white-body p {
+            margin-bottom: 20px;
+        }
+    }
+
+    
+</style>
+
+<body>
+    <section class="full-section-video">
+
+        <!-- Your video goes here -->
+
+        <video autoplay muted loop>
+            <source src="https://cdn.shopify.com/videos/c/o/v/31eb035d015f440688f435833f719dcf.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </section>
+     <!-- Your prfile banner goes here -->
+    <section class="banner-section-profile">
+        <div class="container-fluid">
+            <div class="banner-body-profile">
+                <div>
+                    <img src="home-image.webp" alt="" width="240px" height="240px">
+                </div>
+                <div class="banner-botom-section-profile">
+                    <p class="banner-para-profile">
+                        "At Dynamic we build and inspire a family of happy individuals that strive for success in
+                        anything they put their minds to. In and out of work we support those around us that need help.
+                        We also supply office products to the trade…."
+                    </p>
+                    <div>
+                        <h2>Carl Verlander <span>CEO</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- We've reached so far... -->
+    <section class="bg-red">
+        <div class="container p-0">
+            <div class="white-bg">
+                <div class="bg-white-body">
+                    <div>
+                        <h6>
+                            We've reached so far...
+                        </h6>
+                        <p>We take the responsibility furnishing your office</p>
+                    </div>
+                    <div class="bg-bottom-sec">
+                        <div>
+                            <h2>1,000,000 <span>+</span></h2>
+                            <p>Chairs & Desks Sold</p>
+                        </div>
+                        <div>
+                            <h2>99.5 <span>%</span></h2>
+                            <p>Satifaction Rate</p>
+                        </div>
+                        <div>
+                            <h2>6000 <span>+</span></h2>
+                            <p>Product Available</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Your Our Mission Statementgoes here -->
+    <section>
+        <div class="t1">
+            <h1>
+                Our <span>Mission </span><span>Statement</span>
+            </h1>
+
+            <p class="para">'Our customers and our teams form the very essence of our culture, and through their
+                dedication, we consistently <br>'Make it Happen'.</p>
+        </div>
+    </section>
+<!-- Company Objectives -->
+    <section class="parallax-section">
+        <div class="container">
+            <h1>Company Objectives</h1>
+            <div class="parallax-body">
+                <div class="main-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-regular fa-hand"></i>
+                            </div>
+                            <div>
+                                <h3>Customer Excellence</h3>
+                            </div>
+                        </div>
+                        <p>Employee attraction and retention, ongoing training, and development.  Recruiting internally where possible, have a positive work environment where every opinion counts.  We are Living Wage accredited and Disability Confident Committed. 
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-regular fa-hand"></i>
+                            </div>
+                            <div>
+                                <h3>Our Teams</h3>
+                            </div>
+                        </div>
+                        <p>Employee attraction and retention, ongoing training, and development.  Recruiting internally where possible, have a positive work environment where every opinion counts.  We are Living Wage accredited and Disability Confident Committed. </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-regular fa-hand"></i>
+                            </div>
+                            <div>
+                                <h3>Our Core Values</h3>
+                            </div>
+                        </div>
+                        <p>Because we care, we continually improve by listening to our customers and our teams and learn and grow, changing to be the best and offer the best.  The people that care.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-regular fa-hand"></i>
+                            </div>
+                            <div>
+                                <h3>Social Responsibility</h3>
+                            </div>
+                        </div>
+                        <p>For the environment and those growing up in a changing world and those who need some help and support.  Tree Nation, Woodland Trust, TNT (Tuesday Night Team), and NCT (Northamptonshire Children’s Charity). Working towards Net Zero 2040.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <i class="fa-regular fa-hand"></i>
+                            </div>
+                            <div>
+                                <h3>Market Share & Profit</h3>
+                            </div>
+                        </div>
+                        <p>To monitor and analyse activities of competition, understand our position with the market and grow position.  With product, price, profitability, and people.  Have sustainable growth with the careful use of company resources such as finances and people. </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Journey So Far, Not Always By Bus... -->
+    <section class="dynamic-section">
+        <div class="container1">
+            <div class="top-red-span"></div>
+            <div class="dynamic-body-content">
+                <h1>Our Journey So Far, Not Always By Bus...</h1>
+                <div class="dynamic-card-section ">
+                    <div class="card" data-aos="fade-right">
+                        <h2>Dynamic Office Seating Limited is born - 2006</h2>
+                        <p>Having worked in the office furniture industry, Carl Verlander became aware of a unique
+                            selling point; to deliver office seating next day. Here the trio of Carl, Josh and George
+                            was born. Often working all night building chairs to deliver around the country, the vision
+                            of Dynamic soon became a reality.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2006</div>
+                        </div>
+                       
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="img/MicrosoftTeams-image_55.png" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="img/second-dynamicimg.png" alt="">
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2007</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>Life began at a unit in Moulton Park - 2007</h2>
+                        <p>It wasn’t long before the support of others was needed, and the team grew to 7; Jess started her journey with us at this time and you may still speak to her to this very day. It was during this early stage that the “Make it Happen” belief was born and continues even now.</p>
+                    </div>
+                </div>
+              
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>It became clear that a bigger building was needed: Gladstone Road - 2009</h2>
+                        <p>Here things started to snowball and with the addition of more department managers and some of our biggest customers joining us, we grew from strength to strength. Those customers are still with us today and are our biggest champions.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2009</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="img/dy3.png" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/Ross_Road.jpg?v=1669297679">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2012</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>Then a bigger, bigger building: Ross Road - 2014</h2>
+                        <p>Ross Road sped the growth of Dynamic with the team increasing to over 70 employees and the range expanding to cover office furniture and office accessories. We introduced a 24-hour operation and continued to have year on year growth.</p>
+                    </div>
+
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>Dynamic Bus - Dynamibus - 2015</h2>
+                        <p>‘Dynamibus’ was born and gave us a mobile showroom, we can bring to you and demonstrate a sizable selection of our exciting products in a unique way. Our onboard specialist provides ‘Furnology’ training sessions to help educate and enhance knowledge and understanding.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2014</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/Bus.jpg?v=1669297447">                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/Ross_Road.jpg?v=1669297679">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2015</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>Ross Road Showroom - 2016</h2>
+                        <p>An extensive makeover of our showroom, showcasing our wonderful products and delighting visitors every day. A design lead showroom, displaying our seating and furniture ranges, with our customers in mind.</p>
+                    </div>
+
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>TNT - Tuesday Night Team - 2017</h2>
+                        <p>We wanted to help those less fortunate and in need of some warm food and clothing, so our relationship with Tuesday Night Team was formed – a local charity helping and supporting the homeless in Northampton. We continue to support TNT to this day.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2016</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="img/dy3.png" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/767A6205.jpg?v=1669298604">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2012</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>Mill Road Building - 2018</h2>
+                        <p>Ross Road became a squeeze and Mill Road was acquired to house our forever growing product offering; Dynamic vans whizzed between the two buildings making sure all orders went out of our door, to your door.</p>
+                    </div>
+
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>Dynamic Office Seating Limited is born - 2006</h2>
+                        <p>Our knowledge and understanding of the impact our business has on the environment made it clear we needed to do more. Our commitment to be Net Zero by 2050 was forged.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2016</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/TNT.png?v=1673348396" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/Mill_ROad.jpg?v=1669297555">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2012</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>Today, in our modern site at Lodge Way - March 2021</h2>
+                        <p>Here we have the facilities to ensure we deliver Customer Excellence every day and focus on our mission statement – 'Our customers and our teams form the very essence of our culture, and through their dedication, we consistently 'Make it Happen'.</p>
+                    </div>
+                    
+
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>Virtual Showroom Visits - March 2021</h2>
+                        <p>‘Zoom’ and ‘Teams’ became verbs during the pandemic as most of us started working from home. whether that’s with colleagues, customers or suppliers. When we are organising meetings or events, we ask the people who are joining, if they’re happy to go virtual and make it easy for them to do so. This is a simple way to cut down on our business travel, slashing greenhouse gas emissions and saving time and money in the process. We still use this form of communication today.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">March 2021</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/NetZero40.png?v=1697106584" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/HQ_2.0_copy_Cleaned_Up_8ff39fde-e98e-411e-aa1f-eaf85992efd1.png?v=1669297937">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">July 2022</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>WMS - Warehouse Management System - March 2021</h2>
+                        <p>Our Warehouse Management System was implemented to further grow the business and enhance our customer experience. The system automatically classifies all orders by size and selects the right courier to deliver, using the right vehicle by size. This ensures that we deliver product with least impact on the environment as possible. Getting it right first time</p>
+                    </div>
+                    
+
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>TreeNation - April 2022</h2>
+                        <p>Our mission is to reforest the world and every time you place an order, we plant a tree. Thanks to the Tree-Nation's reforestation and conservation projects we help to restore forests, create jobs, support local communities and protect biodiversity.
+                            Through the Tree-Nation platform we aim to bring a technological solution to the problem of Deforestation, responsible for about 17% of all Climate Change emissions.
+                            It’s as easy as 1,2, tree!</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">July 2022</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="img/dy3.png" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/girl-visiting-virtual-art-gallery-2022-10-13-15-47-34-utc.jpg?v=1671788235">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">2012</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>TreeNation - April 2022</h2>
+                        <p>Our mission is to reforest the world and every time you place an order, we plant a tree. Thanks to the Tree-Nation's reforestation and conservation projects we help to restore forests, create jobs, support local communities and protect biodiversity. Through the Tree-Nation platform we aim to bring a technological solution to the problem of Deforestation, responsible for about 17% of all Climate Change emissions. It’s as easy as 1,2, tree!</p>
+                    </div>
+                    
+
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="card " data-aos="fade-right">
+                        <h2>Northamptonshire Children’s Trust - July 2022</h2>
+                        <p>A new initiative to help and support children and young adults in Northamptonshire. Working in partnership with the trust we support, raise funds, donate and offer our inhouse services to help better the lives of children and young adults in our county.</p>
+                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">July 2022</div>
+                        </div>
+                    </div>
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/Delta.webp?v=1671787457" alt="">
+                    </div>
+                </div>
+                <div class="dynamic-card-section">
+                    <div class="" data-aos="fade-left">
+                        <img src="https://cdn.shopify.com/s/files/1/0555/8793/0250/files/trees_480x480_be0f7c31-f494-4352-8583-77cfed22003b.webp?v=1669303122">                    </div>
+                    <div class="step">
+                        <div>
+                            <div class="circle">Sep 2022</div>
+                        </div>
+                    </div>
+                  
+                    <div class="card " data-aos="fade-right">
+                        <h2>Real Living Wage - September 2022</h2>
+                        <p>We joined to ensure that our staff get the wage they deserve and which meets their every day needs. The real Living Wage rates are higher because they are independently-calculated based on what people need to get by. That's why we encourage all employers that can afford to do so to ensure their employees earn a wage that meets the costs of living, not just the government minimum.  We are one of 11,000 businesses and encourage you to join too!</p>
+                    </div>
+                    
+
+                </div>
+
+
+
+
+
+                
+                
+               
+            </div>
+        </div>
+    </section>
+ 
+</body>
+
+</html>
+
+
+<!-- Your video goes here -->
+
+
+
+
+
+<script src="js/aos.js"></script>
+
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>
+
+
+</body>
+
+</html>
